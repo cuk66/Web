@@ -1,0 +1,3 @@
+body {
+    background: linear-gradient(to right, rgb(28, 28, 180) 0, rgb(28, 28, 180) 300px, white 300px, white calc(100% - 300px), rgb(28, 28, 180) calc(100% - 300px), rgb(28, 28, 180) 100%);
+}

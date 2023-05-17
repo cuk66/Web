@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ноль</title>
+    <link rel="stylesheet" href="CSS/null.css">
+    <style>
+      /* Стили для всплывающих блоков */
+      .popup {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        z-index: 1;
+      }
+  
+      /* Стили для текста, при наведении на который будет появляться информация */
+      .hoverable {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+  
+      .hoverable:hover .popup {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span class="hoverable" style="left: 100px; top: 50px;">
+        Текст 1
+        <div class="popup">
+          Информация для Текста 1
+        </div>
+      </span>
+      <br>
+      <span class="hoverable" style="left: 300px; top: 100px;">
+        Текст 2
+        <div class="popup">
+          Информация для Текста 2
+        </div>
+      </span>
+      <br>
+      <span class="hoverable" style="left: 300px; top: 150px;">
+        Текст 3
+        <div class="popup">
+          Информация для Текста 3
+        </div>
+      </span>
+    </div>
+  </body>
+</html>
